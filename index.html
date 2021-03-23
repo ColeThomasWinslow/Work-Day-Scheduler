@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day Planner</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" heref= "style.css">
+  <style>
+    *{background-color: bisque;}
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em;background-color: rgb(107, 153, 153); font-size: 1.4em; height: 18px; }
+  #sortable li span { position: fixed; 
+   }
+  input{ background-color: aquamarine;
+  width: 300px;
+margin-bottom: 10px;}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+</head>
+<body>
+ <header> 
+   <h1>Day Planner</h1>
+ </header>
+<ul id="sortable">
+ <span>9am</span> <li class="ui-state-default"></span><input class"></input></li>
+ <span>10am</span><li class="ui-state-default"></span><input></input></li>
+  <span>11am</span><li class="ui-state-default"></span><input></input></li>
+  <span>12am</span><li class="ui-state-default"></span><input></input></li>
+  <span>1pm</span><li class="ui-state-default"></span><input></input></li>
+  <span>2pm</span><li class="ui-state-default"></span><input></input></li>
+  <span>3pm</span><li class="ui-state-default"></span><input></input></li>
+  <span>4pm</span><li class="ui-state-default"></span><input></input></li>
+  <span>5pm</span><li class="ui-state-default"></span><input></input></li>
+  <span>6pm</span><li class="ui-state-default"></span><input></input></li>
+</ul>
+ 
+ 
+</body>
+</html>
